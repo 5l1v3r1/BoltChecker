@@ -5520,7 +5520,7 @@ class Main:
                 mode = input('Press ENTER to get back to the menu')
                 import os
                 system('cls')
-                os.system('"boltchecker.exe"')
+                os.system('"boltchecker.py"')
 
         elif mode == "5":
             system('cls')
@@ -5534,7 +5534,7 @@ class Main:
 [{Fore.GREEN}2{Fore.WHITE}] General edits
 [{Fore.GREEN}3{Fore.WHITE}] Domain Sorter
 [{Fore.GREEN}4{Fore.WHITE}] Domain Randomizer
-[{Fore.GREEN}5{Fore.WHITE}] Domain Remover (Email:Pass-User:Pass)
+[{Fore.GREEN}5{Fore.WHITE}] Domain Remover (Email:Pass - User:Pass)
 [{Fore.GREEN}6{Fore.WHITE}] File Splitter
 [{Fore.GREEN}7{Fore.WHITE}] Text Merger
 [{Fore.GREEN}8{Fore.WHITE}] Username Extrator
