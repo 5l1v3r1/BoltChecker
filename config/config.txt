@@ -1,0 +1,7 @@
+[Password Configs]
+numbers = true
+lower_letters = false
+upper_letters = false
+min_length = 2
+max_length = 4
+

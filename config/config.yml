@@ -1,0 +1,150 @@
+checker:       
+                                                                                                                                                                                                                                                                                                                                              
+  # Autologin
+  autologin: false
+  username: your_user
+  password: your_pass
+  # CHECKING SETTINGS:
+  # number of times to check an account recommended to leave this on 3
+  retries: 3
+
+
+  # Print failed lines in the console if using non cui mode
+  Print_fail: true
+
+  # the time it gives for a proxy to respond before moving on to the next if you have payed proxies put this on 1000-3000
+  # if not leave it on 5000-10000
+  timeout: 6000
+
+  # the more threads the faster checking but more of a performance impact if your running this while being afk and you have a good pc you can set this to anything up to 800
+  threads: 300
+
+  # check if an account is mail access
+  mail_access: true
+  
+  # turn this off if you dont want ranked accounts saved with the others
+  save_rankedtypes: true
+  
+
+  # saves the non valid accounts in a file
+  save_bad: false
+
+  # prints errors in the console
+  # leave this off unless something is going wrong
+  debugging: false
+
+ # discord bot linking feature
+  bot:
+                bot_linking: false
+   
+ # Profit calculator for if you have a shop or sell your accounts:
+  profit:
+                profit: true
+                Combolist price: 0
+                NFA: 1
+                SFA: 7
+                MFA: 100
+                Mojang Cape: 1000
+                Mineplex Ranked: 50
+                Mineplex Leveled: 10
+                Optifine Cape: 250
+                Labymod Cape: 100
+                Liquidbounce Cape: 50
+                Og/3letter nick: 500
+                Hypixel Ranked: 50
+                Hypixel Leveled (25+): 10
+                Velt Ranked: 500
+                Hive Ranked: 50
+
+
+  webhook:
+  # use a webhook to send hits true/false
+                Webhook: false
+  # webhook id to send hits to
+                WebhookID: https://discordapp.com/api/webhooks/
+
+
+  RPC:
+                # Set true if you want to flex bolt on people, this will only work with the discord APP not the webbrowser
+                # It has a small impact on speed so set false if you just want the best speed of checking
+                DiscordRPC: false
+                # Delay before refreshing discord rpc 
+                # the lower the delay the bigger cpu impact and the slower the checking
+                # (in seconds)
+                refresh_time: 10
+                # tells you every time discord rpc is updated/enabled/disabled also prints errors with discord rpc
+                # if discordrpc is disabled dont touch this
+                Debug: false
+
+  
+  # CAPES:
+  capes:
+                optifine: true
+                labymod:  true
+                minecon:  true
+                liquidbounce: true
+
+
+  # RANKS:
+  rank:
+                hypixel:  true
+                mineplex: true
+                hivemc: true
+                veltpvp: true
+                wynncraft: true
+
+  # minimum UHC stats to be saved in a file 
+  uhc:
+                check_uhc: true
+                uhc_coins: 1000
+                uhc_wins: 5
+
+  # minimum Skywars stats to be saved in a file 
+  skywars:
+                check_skywars: true
+                skywars_coins: 10000
+
+  # minimum Bedwars stats to be saved in a file 
+  bedwars:
+                check_bedwars: true
+                bwlevel: 50
+
+
+
+ # levels to check for 
+  level:
+                hypixel: true
+                hypixel_level: 10
+                mineplex: true
+                mineplex_level: 10
+
+ # PROXY SETTINGS
+ # (IMPORTANT) Set proxies to true if you are checking large combos HOWEVER if you are checking smaller combos (less than 75) feel free to set proxies to false this will check much faster and wont skip hits  but will get your ip banned if you check more than 75
+  proxy:
+                # Whether to use proxies or not don't put false unless checking less than 75 combos
+                proxy: true
+                # Proxy type: |HTTP|SOCKS4|SOCKS5|
+                proxy_type: 'SOCKS4'
+   
+                # use proxies to check for MA (mail access) leave this false unless your afraid your ip will get banned
+                mailcheck_use_proxy: false
+
+                proxy_api: false
+                api_link: 'https://api.proxyscrape.com/?request=getproxies&proxytype=socks4&timeout=10000&country=all'
+                
+
+ # PROXYCHECKER
+  proxychecker:
+                # The more threads the faster the checking but more of a peformance impact
+                pc_threads: 400
+                # Timeout Amount of time to give each proxy to respond
+                pc_timeout: 10  
+  passwordchanger:
+                # auto change passwords for sfa when checking
+                autochange: false
+                #new pass
+                #MUST CONTAIN: 1 lowercase, 1 uppercase, 1 number, 1 symbol, more than 8 long
+                new_password: boltCHECKER69!
+  
+
+

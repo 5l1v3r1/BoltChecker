@@ -1,0 +1,8 @@
+colorama
+fake-useragent
+PyYAML
+urllib3
+requests
+pypresence
+playsound
+cloudscraper
