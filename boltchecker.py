@@ -7019,7 +7019,7 @@ class Main:
                              f'> <a:thisr:756848874706174013> UHC Coins: {Counter.uhccoin}\n\n')
                 await ctx.send(fullstats)
                 await ctx.send('**Thank you for using BoltChecker**')
-        client.run("NzQzNzYwMDA2NTQwOTUxNTg2.XzZWew.F17x8hzckXWZWBbHq_YYsRibFmM")
+        #client.run("TOKEN")
 
     def bancheckerbot(self):
         users = []
