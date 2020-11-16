@@ -228,7 +228,7 @@ default_values = '''checker:
                 proxy_type: 'SOCKS4'
    
                 # use proxies to check for MA (mail access) leave this false unless your afraid your ip will get banned
-                mailcheck_use_proxy: false
+                mailcheck_use_proxy: true
 
                 proxy_api: false
                 api_link: 'https://api.proxyscrape.com/?request=getproxies&proxytype=socks4&timeout=10000&country=all'
@@ -4836,7 +4836,7 @@ class Main:
         from requests.packages.urllib3.exceptions import InsecureRequestWarning
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         try:
-            lastver=scraper.get(url='https://pastebin.com/raw/gSrVyyuQ').text.strip()
+            lastver=scraper.get(url='https://pastebin.com/raw/UZqFch9q').text.strip()
         except Exception as f:
             print(f'{Fore.RED}[ERROR]: {f}')
             sleep(5)
@@ -4901,7 +4901,7 @@ class Main:
             system('cls')
             print(self.t)
             windll.kernel32.SetConsoleTitleW(
-                f'Boltchecker cracked by ignacio#1337 | Module: ProxyChecker')
+                f'Boltchecker cracked by igna#6666 | Module: ProxyChecker')
             THREADS = Checker.ProxyChecker.pcthreads
 
             class Stats:
@@ -4978,7 +4978,7 @@ class Main:
                 print('Starting...\n\n')
                 Thread(target=self.proxy_cpm, daemon=True).start()
                 windll.kernel32.SetConsoleTitleW(
-                    f'BoltChecker cracked by ignacio#1337 | Starting | Boltproxy')
+                    f'BoltChecker cracked by igna#6666 | Starting | Boltproxy')
                 if Checker.RPC.discordrpc:
                     rpc.update(large_image='large', large_text='Boltchecker', state='Checking Proxies | Boltproxy',
                                details=f'Unbanned: {Counter.mojangunbanned} Bad: {Counter.invalid}')
