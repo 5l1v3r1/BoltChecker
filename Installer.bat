@@ -1,5 +1,5 @@
 @echo off
-title Boltchecker ^| Cracked by ignacio#1337
+title Boltchecker ^| Cracked by igna#6666
 cls
 pip install -r 	requirements.txt
 pause
