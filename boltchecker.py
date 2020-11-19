@@ -4901,7 +4901,7 @@ class Main:
             system('cls')
             print(self.t)
             windll.kernel32.SetConsoleTitleW(
-                f'Boltchecker cracked by igna#6666 | Module: ProxyChecker')
+                f'Boltchecker cracked by ignacio#2908 | Module: ProxyChecker')
             THREADS = Checker.ProxyChecker.pcthreads
 
             class Stats:
@@ -4978,7 +4978,7 @@ class Main:
                 print('Starting...\n\n')
                 Thread(target=self.proxy_cpm, daemon=True).start()
                 windll.kernel32.SetConsoleTitleW(
-                    f'BoltChecker cracked by igna#6666 | Starting | Boltproxy')
+                    f'BoltChecker cracked by ignacio#2908 | Starting | Boltproxy')
                 if Checker.RPC.discordrpc:
                     rpc.update(large_image='large', large_text='Boltchecker', state='Checking Proxies | Boltproxy',
                                details=f'Unbanned: {Counter.mojangunbanned} Bad: {Counter.invalid}')
@@ -6082,7 +6082,7 @@ class Main:
                                      encoding='u8').write(f'{line} | {username}\n')
                     if vaildalt:
                         import re
-                        url = f'https://sky.lea.moe/stats/Juvix01'
+                        url = f'https://sky.lea.moe/stats/eu'
                         response = requests.get(
                             url=url, headers=self.mailheaders).text
                         if not 'No user with the name' in response:
