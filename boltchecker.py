@@ -4901,7 +4901,7 @@ class Main:
             system('cls')
             print(self.t)
             windll.kernel32.SetConsoleTitleW(
-                f'Boltchecker cracked by ignacio#2908 | Module: ProxyChecker')
+                f'Boltchecker cracked by ignacio#1337 | Module: ProxyChecker')
             THREADS = Checker.ProxyChecker.pcthreads
 
             class Stats:
@@ -4978,7 +4978,7 @@ class Main:
                 print('Starting...\n\n')
                 Thread(target=self.proxy_cpm, daemon=True).start()
                 windll.kernel32.SetConsoleTitleW(
-                    f'BoltChecker cracked by ignacio#2908 | Starting | Boltproxy')
+                    f'BoltChecker cracked by ignacio#1337 | Starting | Boltproxy')
                 if Checker.RPC.discordrpc:
                     rpc.update(large_image='large', large_text='Boltchecker', state='Checking Proxies | Boltproxy',
                                details=f'Unbanned: {Counter.mojangunbanned} Bad: {Counter.invalid}')
@@ -7063,7 +7063,7 @@ class Main:
                                    f'> <a:thisr:756848874706174013> Bad: {banchecker.bad}\n')
                 await ctx.send(bancheckerstats)
                 await ctx.send('**Thank you for using BoltChecker**')
-        client.run("NzQzNzYwMDA2NTQwOTUxNTg2.XzZWew.F17x8hzckXWZWBbHq_YYsRibFmM")
+        client.run(TOKEN)
 
     def combo(self):
         system('cls')
