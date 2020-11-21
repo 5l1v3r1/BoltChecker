@@ -1,6 +1,1 @@
-@echo off
-color 3
-title Boltchecker ^| Cracked by ignacio#2908
-cls
-python -m pip install -r requirements.txt
-pause
+@echo off && color 3 && title BoltChecker ^| Cracked by ignacio#1337 ^| discord.gg/J7ZChhgc4X && pip install -r requirements.txt && pause && python  boltchecker.py	&& pause && echo You got a error! && pause && exit
