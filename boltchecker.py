@@ -4821,7 +4821,7 @@ class Main:
         self.Paused = False
         self.proxy_type = Checker.Proxy.type
         windll.kernel32.SetConsoleTitleW(
-            f'BoltChecker cracked by ignacio#1337 | Main menu')
+            f'BoltChecker cracked by k0dy | Main menu')
         from colorama import Fore
         self.t = f'''{Fore.LIGHTWHITE_EX}  
 
@@ -4881,7 +4881,7 @@ class Main:
                     print('RPC set successfully.')
             system('cls')
             windll.kernel32.SetConsoleTitleW(
-                f'BoltChecker cracked by ignacio#1337 | v{self.version} | Select A mode')
+                f'BoltChecker cracked by k0dy | v{self.version} | Select A mode')
             print(self.t)
         print(f'''
 {Fore.GREEN}|{Fore.WHITE}OPTIONS:
@@ -4901,7 +4901,7 @@ class Main:
             system('cls')
             print(self.t)
             windll.kernel32.SetConsoleTitleW(
-                f'Boltchecker cracked by ignacio#1337 | Module: ProxyChecker')
+                f'Boltchecker cracked by k0dy | Module: ProxyChecker')
             THREADS = Checker.ProxyChecker.pcthreads
 
             class Stats:
@@ -4978,7 +4978,7 @@ class Main:
                 print('Starting...\n\n')
                 Thread(target=self.proxy_cpm, daemon=True).start()
                 windll.kernel32.SetConsoleTitleW(
-                    f'BoltChecker cracked by ignacio#1337 | Starting | Boltproxy')
+                    f'BoltChecker cracked by k0dy | Starting | Boltproxy')
                 if Checker.RPC.discordrpc:
                     rpc.update(large_image='large', large_text='Boltchecker', state='Checking Proxies | Boltproxy',
                                details=f'Unbanned: {Counter.mojangunbanned} Bad: {Counter.invalid}')
