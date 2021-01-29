@@ -245,7 +245,7 @@ default_values = '''checker:
                 autochange: false
                 #new pass
                 #MUST CONTAIN: 1 lowercase, 1 uppercase, 1 number, 1 symbol, more than 8 long
-                new_password: boltCHECKER69!
+                new_password: boltCHECKER1589!
   
 
 
@@ -4794,7 +4794,7 @@ class Main:
         self.hits = Queue()
         self.bad = Queue()
         self.useragent = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36'}
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36'}
         self.mailheaders = {
             'User-Agent': 'MyCom/12436 CFNetwork/758.2.8 Darwin/15.0.0', 'Pragma': 'no-cache'}
         self.mcurl = 'https://authserver.mojang.com/authenticate'
@@ -4821,7 +4821,7 @@ class Main:
         self.Paused = False
         self.proxy_type = Checker.Proxy.type
         windll.kernel32.SetConsoleTitleW(
-            f'BoltChecker cracked by k0dy | Main menu')
+            f'BoltChecker cracked by korea | Main menu')
         from colorama import Fore
         self.t = f'''{Fore.LIGHTWHITE_EX}  
 
@@ -4881,7 +4881,7 @@ class Main:
                     print('RPC set successfully.')
             system('cls')
             windll.kernel32.SetConsoleTitleW(
-                f'BoltChecker cracked by k0dy | v{self.version} | Select A mode')
+                f'BoltChecker cracked by korea | v{self.version} | Select A mode')
             print(self.t)
         print(f'''
 {Fore.GREEN}|{Fore.WHITE}OPTIONS:
@@ -4901,7 +4901,7 @@ class Main:
             system('cls')
             print(self.t)
             windll.kernel32.SetConsoleTitleW(
-                f'Boltchecker cracked by k0dy | Module: ProxyChecker')
+                f'Boltchecker cracked by korea | Module: ProxyChecker')
             THREADS = Checker.ProxyChecker.pcthreads
 
             class Stats:
@@ -4978,7 +4978,7 @@ class Main:
                 print('Starting...\n\n')
                 Thread(target=self.proxy_cpm, daemon=True).start()
                 windll.kernel32.SetConsoleTitleW(
-                    f'BoltChecker cracked by k0dy | Starting | Boltproxy')
+                    f'BoltChecker cracked by korea | Starting | Boltproxy')
                 if Checker.RPC.discordrpc:
                     rpc.update(large_image='large', large_text='Boltchecker', state='Checking Proxies | Boltproxy',
                                details=f'Unbanned: {Counter.mojangunbanned} Bad: {Counter.invalid}')
@@ -6962,12 +6962,12 @@ class Main:
             hwiddd = subprocess.check_output(
                 'wmic csproduct get uuid').decode().split('\n')[1].strip()
             if ctx.message.author.id in users:
-                stats = (f'> <a:thisr:756848874706174013> CPM: {Counter.cpm}\n\n'
-                         f'> <a:thisr:756848874706174013> Hits: {Counter.hits} ({Counter.hitspercent}%) \n'
-                         f'> <a:thisr:756848874706174013> Fails: {Counter.bad} ({Counter.failedpercent}%)\n\n'
-                         f'> <a:thisr:756848874706174013> NFA (Non Full Access): {Counter.nfa}\n'
-                         f'> <a:thisr:756848874706174013> SFA (Semi Full Access): {Counter.sfa}\n'
-                         f'> <a:thisr:756848874706174013> MFA (Mail Full Access): {Counter.emailaccess}\n')
+                stats = (f'> <a:thisr:804842295081959447> CPM: {Counter.cpm}\n\n'
+                         f'> <a:thisr:804842295081959447> Hits: {Counter.hits} ({Counter.hitspercent}%) \n'
+                         f'> <a:thisr:804842295081959447> Fails: {Counter.bad} ({Counter.failedpercent}%)\n\n'
+                         f'> <a:thisr:804842295081959447> NFA (Non Full Access): {Counter.nfa}\n'
+                         f'> <a:thisr:804842295081959447> SFA (Semi Full Access): {Counter.sfa}\n'
+                         f'> <a:thisr:804842295081959447> MFA (Mail Full Access): {Counter.emailaccess}\n')
                 await ctx.send(stats)
                 await ctx.send('**Thank you for using BoltChecker**')
 
@@ -6993,30 +6993,30 @@ class Main:
             hwiddd = subprocess.check_output(
                 'wmic csproduct get uuid').decode().split('\n')[1].strip()
             if ctx.message.author.id in users:
-                fullstats = (f'> <a:thisr:756848874706174013> CPM: {Counter.cpm}\n'
-                             f'> <a:thisr:756848874706174013> Hits: {Counter.hits} ({Counter.hitspercent}%)\n'
-                             f'> <a:thisr:756848874706174013> Fails: {Counter.bad} ({Counter.failedpercent}%)\n\n'
-                             f'> <a:thisr:756848874706174013> NFA (Non Full Access): {Counter.nfa}\n'
-                             f'> <a:thisr:756848874706174013> SFA (Semi Full Access): {Counter.sfa}\n'
-                             f'> <a:thisr:756848874706174013> MFA (Mail Full Access): {Counter.emailaccess}\n'
-                             f'> <a:thisr:756848874706174013> LBMCapes (Labymod capes): {Counter.labymod}\n'
-                             f'> <a:thisr:756848874706174013> MJCapes (Mojang capes): {Counter.mojang}\n'
-                             f'> <a:thisr:756848874706174013> OFCapes (Optifine capes): {Counter.optifine}\n'
-                             f'> <a:thisr:756848874706174013> LBCapes (Liquidbounce capes): {Counter.liquidbounce}\n\n'
-                             f'> <a:thisr:756848874706174013> OG Name: {Counter.ogname}\n'
-                             f'> <a:thisr:756848874706174013> Hypixel Ranked: {Counter.hypixelrank}\n'
-                             f'> <a:thisr:756848874706174013> Mineplex Ranked: {Counter.mineplex_ranked}\n'
-                             f'> <a:thisr:756848874706174013> Wynncraft Ranked: {Counter.wynncraft}\n'
-                             f'> <a:thisr:756848874706174013> Hive Ranked: {Counter.hivemcrank}\n'
-                             f'> <a:thisr:756848874706174013> Velt Ranked: {Counter.veltrank}\n'
-                             f'> <a:thisr:756848874706174013> Hypixel Leveled (1+): {Counter.one}\n'
-                             f'> <a:thisr:756848874706174013> Hypixel Leveled (10+): {Counter.eleven}\n'
-                             f'> <a:thisr:756848874706174013> Hypixel Leveled (25+): {Counter.twenty}\n'
-                             f'> <a:thisr:756848874706174013> Mineplex Leveled ({Checker.Level.mineplex_level}+): {Counter.mineplex_leveled}\n'
-                             f'> <a:thisr:756848874706174013> NoLogin Hypixel (never logged into hypixel): {Counter.nohypixel}\n'
-                             f'> <a:thisr:756848874706174013> BedWars Coins: {Counter.bwcoin}\n'
-                             f'> <a:thisr:756848874706174013> SkyWars Coins: {Counter.swcoin}\n'
-                             f'> <a:thisr:756848874706174013> UHC Coins: {Counter.uhccoin}\n\n')
+                fullstats = (f'> <a:thisr:804842295081959447> CPM: {Counter.cpm}\n'
+                             f'> <a:thisr:804842295081959447> Hits: {Counter.hits} ({Counter.hitspercent}%)\n'
+                             f'> <a:thisr:804842295081959447> Fails: {Counter.bad} ({Counter.failedpercent}%)\n\n'
+                             f'> <a:thisr:804842295081959447> NFA (Non Full Access): {Counter.nfa}\n'
+                             f'> <a:thisr:804842295081959447> SFA (Semi Full Access): {Counter.sfa}\n'
+                             f'> <a:thisr:804842295081959447> MFA (Mail Full Access): {Counter.emailaccess}\n'
+                             f'> <a:thisr:804842295081959447> LBMCapes (Labymod capes): {Counter.labymod}\n'
+                             f'> <a:thisr:804842295081959447> MJCapes (Mojang capes): {Counter.mojang}\n'
+                             f'> <a:thisr:804842295081959447> OFCapes (Optifine capes): {Counter.optifine}\n'
+                             f'> <a:thisr:804842295081959447> LBCapes (Liquidbounce capes): {Counter.liquidbounce}\n\n'
+                             f'> <a:thisr:804842295081959447> OG Name: {Counter.ogname}\n'
+                             f'> <a:thisr:804842295081959447> Hypixel Ranked: {Counter.hypixelrank}\n'
+                             f'> <a:thisr:804842295081959447> Mineplex Ranked: {Counter.mineplex_ranked}\n'
+                             f'> <a:thisr:804842295081959447> Wynncraft Ranked: {Counter.wynncraft}\n'
+                             f'> <a:thisr:804842295081959447> Hive Ranked: {Counter.hivemcrank}\n'
+                             f'> <a:thisr:804842295081959447> Velt Ranked: {Counter.veltrank}\n'
+                             f'> <a:thisr:804842295081959447> Hypixel Leveled (1+): {Counter.one}\n'
+                             f'> <a:thisr:804842295081959447> Hypixel Leveled (10+): {Counter.eleven}\n'
+                             f'> <a:thisr:804842295081959447> Hypixel Leveled (25+): {Counter.twenty}\n'
+                             f'> <a:thisr:804842295081959447> Mineplex Leveled ({Checker.Level.mineplex_level}+): {Counter.mineplex_leveled}\n'
+                             f'> <a:thisr:804842295081959447> NoLogin Hypixel (never logged into hypixel): {Counter.nohypixel}\n'
+                             f'> <a:thisr:804842295081959447> BedWars Coins: {Counter.bwcoin}\n'
+                             f'> <a:thisr:804842295081959447> SkyWars Coins: {Counter.swcoin}\n'
+                             f'> <a:thisr:804842295081959447> UHC Coins: {Counter.uhccoin}\n\n')
                 await ctx.send(fullstats)
                 await ctx.send('**Thank you for using BoltChecker**')
         #client.run("TOKEN")
@@ -7054,13 +7054,13 @@ class Main:
         @client.command()
         async def stats(ctx):
             if ctx.message.author.id in users:
-                bancheckerstats = (f'> <a:thisr:756848874706174013> Checked: {banchecker.checked}\n'
-                                   f'> <a:thisr:756848874706174013> PermBanned: {banchecker.banned}\n'
-                                   f'> <a:thisr:756848874706174013> TempBanned: {banchecker.tempbanned}\n'
-                                   f'> <a:thisr:756848874706174013> Unbanned: {banchecker.unbanned}\n'
-                                   f'> <a:thisr:756848874706174013> NFA: {banchecker.nfa}\n'
-                                   f'> <a:thisr:756848874706174013> SFA: {banchecker.sfa}\n'
-                                   f'> <a:thisr:756848874706174013> Bad: {banchecker.bad}\n')
+                bancheckerstats = (f'> <a:thisr:804842295081959447> Checked: {banchecker.checked}\n'
+                                   f'> <a:thisr:804842295081959447> PermBanned: {banchecker.banned}\n'
+                                   f'> <a:thisr:804842295081959447> TempBanned: {banchecker.tempbanned}\n'
+                                   f'> <a:thisr:804842295081959447> Unbanned: {banchecker.unbanned}\n'
+                                   f'> <a:thisr:804842295081959447> NFA: {banchecker.nfa}\n'
+                                   f'> <a:thisr:804842295081959447> SFA: {banchecker.sfa}\n'
+                                   f'> <a:thisr:804842295081959447> Bad: {banchecker.bad}\n')
                 await ctx.send(bancheckerstats)
                 await ctx.send('**Thank you for using BoltChecker**')
         client.run(TOKEN)
@@ -7763,7 +7763,7 @@ if __name__ == '__main__':
     from cloudscraper import create_scraper
     import requests
     from requests import Session, exceptions
-    agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36'
+    agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36'
     scraper = create_scraper(sess=Session(), browser={'custom': agent})
     import requests
     from glob import glob
